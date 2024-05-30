@@ -1,0 +1,385 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header and Navigation */
+header {
+    background: #333;
+    color: #fff;
+    padding: 1em 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1em;
+}
+
+.logo h1 {
+    margin: 0;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1em;
+}
+
+.nav-links li {
+    margin: 0;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #a1e5e5;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    background: url('your-hero-image-url.jpg') no-repeat center center/cover;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+}
+
+.hero .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: darkgray;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+}
+
+.hero h2 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+.explore-button {
+    margin-top: 1em;
+    padding: 0.5em 2em;
+    border: none;
+    background: #c4f0f0;
+    color: #333;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.explore-button:hover {
+    background: #f3fff3;
+}
+
+/* Main Content */
+.main-content {
+    max-width: 1200px;
+    margin: 2em auto;
+    padding: 0 1em;
+}
+
+.movie-list {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    flex-wrap: wrap;
+    margin-bottom: 2em;
+}
+
+.movie-list img {
+    width: calc(25% - 1em);
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.movie-list img:hover {
+    transform: scale(1.05);
+}
+
+.description, .film-text, .next-content {
+    text-align: center;
+}
+
+.description h2, .film-text h2, .section-heading {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+}
+
+.highlight-text, .highlight4-text, .highlight3-text, .highlight5-text, .highlight2-text, .highlight1 {
+    color: #a1e5e5;
+}
+
+.next-content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+.next-content img {
+    width: calc(25% - 1em);
+    height: 60vh;
+    border-radius: 10px;
+    padding-left: 40px;
+    transition: transform 0.3s;
+}
+
+.next-content img:hover {
+    transform: scale(1.05);
+}
+
+/* Pricing Plans */
+.pricing-plans {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    flex-wrap: wrap;
+    margin: 2em auto;
+    max-width: 1200px;
+}
+
+.pricing-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 1em;
+    text-align: center;
+    width: calc(33.333% - 2em);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.pricing-card:hover {
+    transform: scale(1.05);
+}
+
+.pricing-card .heading h4 {
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+.pricing-card .price {
+    font-size: 2em;
+    margin: 0.5em 0;
+}
+
+.pricing-card .features {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.pricing-card .features li {
+    margin: 0.5em 0;
+}
+
+.pricing-card .cta-btn {
+    margin-top: 1em;
+    padding: 0.5em 2em;
+    border: none;
+    background: #a1e5e5;
+    color: #333;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.pricing-card .cta-btn:hover {
+    background: #f7f6f3;
+}
+
+/* FAQ Section */
+.acc-kontainer {
+    max-width: 800px;
+    margin: 2em auto;
+    padding: 0 1em;
+}
+
+.acc-kontainer div {
+    margin-bottom: 1em;
+}
+
+.acc-kontainer input {
+    display: none;
+}
+
+.acc-kontainer label {
+    display: block;
+    background: #a1e5e5;
+    color: #333;
+    padding: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.acc-kontainer label:hover {
+    background: #a1e5e5;
+}
+
+.acc-body {
+    display: none;
+    padding: 1em;
+    border: 1px solid #ddd;
+    border-top: none;
+    border-radius: 0 0 5px 5px;
+    background: #fff;
+}
+
+.acc-kontainer input:checked + label + .acc-body {
+    display: block;
+}
+
+/* Contact Form */
+.contact-me-container {
+    max-width: 800px;
+    margin: 2em auto;
+    padding: 0 1em;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.input-container {
+    position: relative;
+}
+
+.input-container i {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    color: #ccc;
+}
+
+.input-container input, .input-container textarea {
+    width: 100%;
+    padding: 1em;
+    padding-left: 2.5em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.input-container textarea {
+    resize: vertical;
+}
+
+.submit-button {
+    padding: 1em;
+    border: none;
+    background: #a1e5e5;
+    color: #333;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.submit-button:hover {
+    background: #e7e5de;
+}
+
+/* Footer */
+.footer {
+    background: #333;
+    color: #fff;
+    padding: 2em 1em;
+    text-align: center;
+}
+
+.footer .container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1em;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-col {
+    flex: 1;
+    min-width: 200px;
+}
+
+.footer-col h4 {
+    margin-bottom: 1em;
+    font-size: 1.2em;
+}
+
+.footer-col ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-col ul li {
+    margin-bottom: 0.5em;
+}
+
+.footer-col ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-col ul li a:hover {
+    color: #f1c40f;
+}
+
+.footer-bottom {
+    margin-top: 2em;
+}
+
+.footer-bottom p {
+    margin: 0;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .movie-list img, .next-content img, .pricing-card {
+        width: calc(50% - 1em);
+    }
+
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-links li {
+        margin: 0.5em 0;
+    }
+
+    .pricing-card {
+        width: calc(100% - 2em);
+    }
+}
+
+@media (max-width: 480px) {
+    .movie-list img, .next-content img {
+        width: calc(100% - 1em);
+    }
+
+    .pricing-card {
+        width: calc(100% - 2em);
+    }
+}
