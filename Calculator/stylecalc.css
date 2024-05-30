@@ -1,0 +1,48 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url("bac.jpg");
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+}
+
+.calculator {
+    width: 488px;
+    height: 490px;
+    padding: 20px;
+    margin-right: 42%;
+    background-color: #000000;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    
+}
+
+.display {
+    grid-column: span 4;
+    background-color: #f0f0f0;
+    padding: 10px;
+    text-align: right;
+    font-size: 24px;
+    border-radius: 4px;
+}
+
+.btn {
+    padding: 15px;
+    font-size: 20px;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    background-color: #e9ecef;
+}
+
+.btn:hover {
+    background-color: #ced4da;
+}
